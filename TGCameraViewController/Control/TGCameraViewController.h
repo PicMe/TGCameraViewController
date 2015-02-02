@@ -32,6 +32,8 @@
 
 @interface TGCameraViewController : UIViewController
 
+@property (nonatomic, assign) BOOL albumButtonHidden;
+
 @property (weak) id<TGCameraDelegate> delegate;
 
 @end

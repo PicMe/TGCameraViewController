@@ -110,6 +110,8 @@
     _shotButton.enabled =
     _albumButton.enabled =
     _flashButton.enabled = NO;
+    
+    _albumButton.hidden = self.albumButtonHidden;
 }
 
 - (void)viewDidAppear:(BOOL)animated
