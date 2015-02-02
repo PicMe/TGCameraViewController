@@ -234,6 +234,7 @@
         [_camera takePhotoWithCaptureView:_captureView videoOrientation:videoOrientation cropSize:_captureView.frame.size
         completion:^(UIImage *photo) {
             TGPhotoViewController *viewController = [TGPhotoViewController newWithDelegate:_delegate photo:photo];
+            viewController.filtersButtonHidden = self.filtersButtonHidden;
             [self.navigationController pushViewController:viewController animated:YES];
         }];
     }];

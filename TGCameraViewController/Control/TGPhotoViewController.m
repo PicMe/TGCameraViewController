@@ -38,6 +38,7 @@ static NSString* const kTGCacheVignetteKey = @"TGCacheVignetteKey";
 
 @interface TGPhotoViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *filtersButton;
 @property (strong, nonatomic) IBOutlet UIImageView *photoView;
 @property (strong, nonatomic) IBOutlet UIView *bottomView;
 @property (strong, nonatomic) IBOutlet TGCameraFilterView *filterView;
@@ -92,6 +93,8 @@ static NSString* const kTGCacheVignetteKey = @"TGCacheVignetteKey";
     
     _photoView.clipsToBounds = YES;
     _photoView.image = _photo;
+    
+    self.filtersButton.hidden = self.filtersButtonHidden;
     
     [self addDetailViewToButton:_defaultFilterButton];
 }

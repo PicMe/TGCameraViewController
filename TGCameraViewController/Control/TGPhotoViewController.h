@@ -28,6 +28,8 @@
 
 @interface TGPhotoViewController : UIViewController
 
+@property (nonatomic, assign) BOOL filtersButtonHidden;
+
 + (instancetype)new __attribute__
 ((unavailable("[+new] is not allowed, use [+newWithDelegate:photo:]")));
 
